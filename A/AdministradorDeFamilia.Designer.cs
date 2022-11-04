@@ -1,7 +1,7 @@
 ﻿
 namespace A
 {
-    partial class Form1
+    partial class AdministradorDeFamilia
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -41,7 +41,7 @@ namespace A
             // 
             // btCompletar
             // 
-            this.btCompletar.Location = new System.Drawing.Point(664, 381);
+            this.btCompletar.Location = new System.Drawing.Point(572, 326);
             this.btCompletar.Name = "btCompletar";
             this.btCompletar.Size = new System.Drawing.Size(75, 23);
             this.btCompletar.TabIndex = 0;
@@ -53,14 +53,14 @@ namespace A
             // 
             this.dgvFamilia.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvFamilia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFamilia.Location = new System.Drawing.Point(41, 42);
+            this.dgvFamilia.Location = new System.Drawing.Point(24, 25);
             this.dgvFamilia.Name = "dgvFamilia";
             this.dgvFamilia.Size = new System.Drawing.Size(511, 409);
             this.dgvFamilia.TabIndex = 1;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(664, 439);
+            this.btnCerrar.Location = new System.Drawing.Point(572, 411);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 23);
             this.btnCerrar.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace A
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(664, 115);
+            this.btnAgregar.Location = new System.Drawing.Point(572, 25);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace A
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(663, 178);
+            this.btnModificar.Location = new System.Drawing.Point(572, 128);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 4;
@@ -90,7 +90,7 @@ namespace A
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(664, 226);
+            this.btnEliminar.Location = new System.Drawing.Point(572, 230);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 5;
@@ -101,17 +101,19 @@ namespace A
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(406, 26);
+            this.label1.Location = new System.Drawing.Point(389, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(146, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Sistema de Gestion de Famila";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form1
+            // AdministradorDeFamilia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 533);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(658, 439);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -119,8 +121,9 @@ namespace A
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvFamilia);
             this.Controls.Add(this.btCompletar);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Name = "AdministradorDeFamilia";
+            this.Text = "AdministradorDeFamilia";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFamilia)).EndInit();
             this.ResumeLayout(false);

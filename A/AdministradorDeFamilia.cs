@@ -12,12 +12,12 @@ using Modelo;
 
 namespace A
 {
-    public partial class Form1 : Form
+    public partial class AdministradorDeFamilia : Form
     {
 
         Familia familia1 = new Familia();
 
-        public Form1()
+        public AdministradorDeFamilia()
         {
             InitializeComponent();
         }
@@ -41,7 +41,8 @@ namespace A
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            AltaFamilia altafamilia = new AltaFamilia();
+            altafamilia.ShowDialog();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -55,6 +56,11 @@ namespace A
             familia1.eliminarFamilia(idFamilia);
 
             dgvFamilia.DataSource = familia1.llenarFamilia();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
