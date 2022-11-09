@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modelo;
 
 namespace A
 {
     public partial class AltaFamilia : Form
     {
+        Familia fila = new Familia();
         public AltaFamilia()
         {
             InitializeComponent();
@@ -30,6 +32,17 @@ namespace A
         private void btCerrar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btAceptar_Click(object sender, EventArgs e)
+        {
+            fila.nombre = textNombre.ToString();
+            fila.apellido = textApellido.ToString();
+            fila.parentesco = textParentesco.ToString();
+            fila.ocupacion = textOcupacion.ToString();
+            fila.AgregarFamilia(fila);
+
+
         }
     }
 }

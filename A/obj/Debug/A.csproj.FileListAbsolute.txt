@@ -127,8 +127,6 @@ C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Memory.xml
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.AssemblyReference.cache
-C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.SuggestedBindingRedirects.cache
-C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.Form1.resources
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.Properties.Resources.resources
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.GenerateResource.cache
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.CoreCompileInputs.cache
@@ -136,3 +134,8 @@ C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.CopyComplete
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.exe
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.pdb
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.AltaFamilia.resources
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.AdministradorDeFamilia.resources
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Reactive.dll
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Reactive.xml
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Threading.Tasks.Extensions.xml
