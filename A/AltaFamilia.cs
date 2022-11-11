@@ -43,6 +43,23 @@ namespace A
             fila.AgregarFamilia(fila);
 
 
+            this.Close();
+
+        }
+
+        private void textApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textParentesco_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textOcupacion_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

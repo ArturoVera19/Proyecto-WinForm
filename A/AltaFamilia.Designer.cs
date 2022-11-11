@@ -110,6 +110,7 @@
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(162, 20);
             this.textApellido.TabIndex = 7;
+            this.textApellido.TextChanged += new System.EventHandler(this.textApellido_TextChanged);
             // 
             // textParentesco
             // 
@@ -117,6 +118,7 @@
             this.textParentesco.Name = "textParentesco";
             this.textParentesco.Size = new System.Drawing.Size(163, 20);
             this.textParentesco.TabIndex = 8;
+            this.textParentesco.TextChanged += new System.EventHandler(this.textParentesco_TextChanged);
             // 
             // textOcupacion
             // 
@@ -124,6 +126,7 @@
             this.textOcupacion.Name = "textOcupacion";
             this.textOcupacion.Size = new System.Drawing.Size(162, 20);
             this.textOcupacion.TabIndex = 9;
+            this.textOcupacion.TextChanged += new System.EventHandler(this.textOcupacion_TextChanged);
             // 
             // AltaFamilia
             // 
