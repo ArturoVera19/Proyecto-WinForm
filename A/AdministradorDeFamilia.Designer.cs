@@ -57,6 +57,7 @@ namespace A
             this.dgvFamilia.Name = "dgvFamilia";
             this.dgvFamilia.Size = new System.Drawing.Size(511, 409);
             this.dgvFamilia.TabIndex = 1;
+            this.dgvFamilia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFamilia_CellContentClick);
             // 
             // btnCerrar
             // 

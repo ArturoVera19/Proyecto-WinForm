@@ -29,7 +29,9 @@ namespace A
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           // dgvFamilia.RowHeadersVisible = false;
+            //dgvFamilia.AllowUserToAddRows = false;
+            dgvFamilia.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             
             dgvFamilia.DataSource = familia1.llenarFamilia();
         }
@@ -41,7 +43,7 @@ namespace A
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            AltaFamilia altafamilia = new AltaFamilia();
+            AltaFamilia altafamilia = new AltaFamilia("A");
             altafamilia.ShowDialog();
 
             dgvFamilia.DataSource = familia1.llenarFamilia();
@@ -50,7 +52,9 @@ namespace A
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            AltaFamilia ModificarFamilia = new AltaFamilia("M");
+            ModificarFamilia.Text = "ModificarFamilia";
+            ModificarFamilia.ShowDialog();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -62,6 +66,11 @@ namespace A
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvFamilia_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

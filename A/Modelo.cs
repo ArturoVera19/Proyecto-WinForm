@@ -67,6 +67,17 @@ namespace Modelo
             cnx.Close();
 
         }
+        public void ModificarFamilia(Familia pMdf)
+        {
+            MySqlConnection cnx = new MySqlConnection("server=10.120.2.123;userid=alumn517;password=Alumno2022;database=repo_517");
+            MySqlCommand instruccion = new MySqlCommand();
+            instruccion.Connection = cnx;
+            cnx.Open();
+            instruccion.CommandText = "update from familia where idfamilia = '" + pMdf + "'";
+            instruccion.ExecuteNonQuery();
+            cnx.Close();
+        }
+
 
     }
 }

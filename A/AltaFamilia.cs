@@ -14,14 +14,19 @@ namespace A
     public partial class AltaFamilia : Form
     {
         Familia fila = new Familia();
-        public AltaFamilia()
+        string nombre = "";
+        public AltaFamilia(string pOrigen)
         {
+           if (pOrigen == "M")
+            {
+                nombre = "Probando si funciona";
+            }
             InitializeComponent();
         }
 
         private void AltaFamilia_Load(object sender, EventArgs e)
         {
-
+            textNombre.Text = nombre;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -36,10 +41,10 @@ namespace A
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
-            fila.nombre = textNombre.ToString();
-            fila.apellido = textApellido.ToString();
-            fila.parentesco = textParentesco.ToString();
-            fila.ocupacion = textOcupacion.ToString();
+            fila.nombre = textNombre.Text;
+            fila.apellido = textApellido.Text;
+            fila.parentesco = textParentesco.Text;
+            fila.ocupacion = textOcupacion.Text;
             fila.AgregarFamilia(fila);
 
 
