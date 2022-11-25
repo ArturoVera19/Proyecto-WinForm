@@ -140,3 +140,4 @@ C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Threading.Tasks
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Reactive.xml
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.Form1.resources
+C:\Users\ET12Compu\Documents\Proyecto-WinForm\A\obj\Debug\A.csproj.SuggestedBindingRedirects.cache

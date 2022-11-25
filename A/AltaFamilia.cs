@@ -14,19 +14,24 @@ namespace A
     public partial class AltaFamilia : Form
     {
         Familia fila = new Familia();
-        string nombre = "";
-        public AltaFamilia(string pOrigen)
+        string origen = "";
+        public AltaFamilia(string pOrigen, string pIdFamilia)
         {
            if (pOrigen == "M")
             {
-                nombre = "Probando si funciona";
+                origen = pIdFamilia;
+                fila.obtenerFamilia(pIdFamilia);
             }
             InitializeComponent();
         }
 
         private void AltaFamilia_Load(object sender, EventArgs e)
         {
-            textNombre.Text = nombre;
+            textNombre.Text = fila.nombre;
+            textApellido.Text = fila.apellido;
+            textParentesco.Text = fila.parentesco;
+            textOcupacion.Text = fila.ocupacion;
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -45,8 +50,16 @@ namespace A
             fila.apellido = textApellido.Text;
             fila.parentesco = textParentesco.Text;
             fila.ocupacion = textOcupacion.Text;
-            fila.AgregarFamilia(fila);
+           // fila.AgregarFamilia(fila);
 
+            if (origen == "")
+            {
+                fila.AgregarFamilia(fila);
+            }
+            else
+            {
+                fila.actualizarFamilia(fila,origen);
+            }
 
             this.Close();
 
